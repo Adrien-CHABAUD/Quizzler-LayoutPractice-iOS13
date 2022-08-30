@@ -31,7 +31,12 @@ class ViewController: UIViewController {
     }
 
     @IBAction func answerButtonPressed(_ sender: UIButton) {
-        
+        questionNumber += 1
+        updateUI()
+    }
+    
+    func updateUI(){
+        questionLabel.text = quiz[questionNumber]
     }
     
     
