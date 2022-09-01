@@ -26,12 +26,14 @@ struct QuizBrain {
     ]
     
     var questionNumber: Int = 0
+    var score: Int = 0
     
     
     // Example of external and Internal parameter name
-    func checkAnswer(_ userAnswer: String) -> Bool{
+    mutating func checkAnswer(_ userAnswer: String) -> Bool{
         if userAnswer == quiz[questionNumber].answer {
             // User got it right
+            score += 1
             return true
         } else {
             // User got it false
@@ -54,6 +56,11 @@ struct QuizBrain {
             questionNumber += 1
         } else {
             questionNumber = 0
+            score = 0
         }
-    }    
+    }
+    
+    func getScore() -> Int {
+        return score
+    }
 }
