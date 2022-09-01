@@ -53,9 +53,15 @@ class ViewController: UIViewController {
         // Update UI with a new question.
         questionLabel.text = quizBrain.getQuestionText()
         
+        // Update answers in the buttons
+        choiceOneButton.setTitle(quizBrain.getQuestionAnswers(0), for: .normal)
+        choiceTwoButton.setTitle(quizBrain.getQuestionAnswers(1), for: .normal)
+        choiceThreeButton.setTitle(quizBrain.getQuestionAnswers(2), for: .normal)
+        
         scoreLabel.text = "Score: \(quizBrain.getScore())"
         
         // Reset colors of the buttons
+        choiceOneButton.backgroundColor = UIColor.clear
         choiceTwoButton.backgroundColor = UIColor.clear
         choiceThreeButton.backgroundColor = UIColor.clear
         
