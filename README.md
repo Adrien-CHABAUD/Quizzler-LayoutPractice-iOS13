@@ -26,7 +26,7 @@ The goal throught this app was to introduce the mobile design patterns: the Mode
 This app is a trivia quiz. A question appear with three different answers possible, the score is kept and increased for each good answers, there is no negative points when answering badly.
 
 <p align="center">
-  <img src="/images/screenshot_main_activty.png" width=300 hspace=20><img src="/images/main_activity.gif" width=300 hspace=20>
+  <img src="/images/screenshot_main_activty.png" width=300 hspace=20><img src="/images/main_activity_quizzler.gif" width=300 hspace=20>
 </p>
 
 
